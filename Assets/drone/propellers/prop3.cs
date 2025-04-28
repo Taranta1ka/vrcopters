@@ -7,6 +7,7 @@ using UnityEngine;
 public class prop3 : MonoBehaviour
 {
     private Rigidbody rb;
+    
 
     public float droneForce=3f;
     private float rothrottle=1f;
@@ -16,23 +17,16 @@ public class prop3 : MonoBehaviour
     [SerializeField] protected bool isArmed=false;
     private bool isthr=false;
     private bool isdwn=false;
-    private bool isUp = false;
-    private bool isDown = false;
-    private bool isRight = false;
-    private bool isLeft = false;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
         rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
     }
     void Update()
     {
         isthr = Input.GetKey("w");
         isdwn = Input.GetKey("s");
-        isUp = Input.GetKey(KeyCode.UpArrow);
-        isDown = Input.GetKey(KeyCode.DownArrow);
-        isRight = Input.GetKey(KeyCode.RightArrow);
-        isLeft = Input.GetKey(KeyCode.LeftArrow);
         if (Input.GetKeyDown("r"))
         {
             if (isArmed)
@@ -59,20 +53,16 @@ public class prop3 : MonoBehaviour
         {
             throttle = throttle-accelerationthr;
         }
-        if (isDown || isRight)
+        //if (droneController.isDown || droneController.isRight)
         {
             rothrottle = 0.95f;
         }
-        if (isLeft || isUp)
+        //if (droneController.isLeft || droneController.isUp)
         {
             rothrottle = 1.05f;
         }
-        if (rb.velocity.magnitude > maxSpeed)
-        {
-            //rb.velocity = rb.velocity.normalized * maxSpeed;
-        }
         Vector3 localUpForce = transform.up * droneForce* 0.1f*throttle*rothrottle;
-        rb.AddForce(localUpForce, ForceMode.Force);   
+        rb.AddForce(localUpForce, ForceMode.Force);
     }
     
 }

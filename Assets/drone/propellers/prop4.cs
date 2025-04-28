@@ -17,10 +17,6 @@ public class prop4 : MonoBehaviour
     [SerializeField] protected bool isArmed=false;
     private bool isthr=false;
     private bool isdwn=false;
-    private bool isUp = false;
-    private bool isDown = false;
-    private bool isRight = false;
-    private bool isLeft = false;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,10 +26,6 @@ public class prop4 : MonoBehaviour
     {
         isthr = Input.GetKey("w");
         isdwn = Input.GetKey("s");
-        isUp = Input.GetKey(KeyCode.UpArrow);
-        isDown = Input.GetKey(KeyCode.DownArrow);
-        isRight = Input.GetKey(KeyCode.RightArrow);
-        isLeft = Input.GetKey(KeyCode.LeftArrow);
         if (Input.GetKeyDown("r"))
         {
             if (isArmed)
@@ -60,11 +52,11 @@ public class prop4 : MonoBehaviour
         {
             throttle = throttle-accelerationthr;
         }
-        if (isDown || isLeft)
+        //if (droneController.isDown || droneController.isLeft)
         {
             rothrottle = 0.95f;
         }
-        if (isRight || isUp)
+        //if (droneController.isRight || droneController.isUp)
         {
             rothrottle = 1.05f;
         }
