@@ -65,7 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\drone\propellers\prop1.cs" />
+    <Compile Include="Assets\lvlRedact.cs" />
     <Compile Include="Assets\drone\propellers\prop3.cs" />
+    <Compile Include="Assets\MovingCamera.cs" />
     <Compile Include="Assets\drone\propellers\prop4.cs" />
     <Compile Include="Assets\drone\HUD\ScaleMove.cs" />
     <Compile Include="Assets\drone\propellers\prop2.cs" />
