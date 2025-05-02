@@ -1,0 +1,9 @@
+
+=== Fri May  2 16:28:25 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.textmeshpro from version 3.0.6 to 3.0.7
+  com.unity.visualscripting from version 1.9.1 to 1.9.4

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CosmicOdyssey\\vrcopters\\vrcopters\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BB9D9A5-E116-3D58-582E-92B23B75F72E}|Assembly-CSharp.csproj|d:\\cosmicodyssey\\vrcopters\\vrcopters\\assets\\simple ui 1\\fonts\\ofl.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5BB9D9A5-E116-3D58-582E-92B23B75F72E}|Assembly-CSharp.csproj|solutionrelative:assets\\simple ui 1\\fonts\\ofl.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OFL.txt",
+              "DocumentMoniker": "D:\\CosmicOdyssey\\vrcopters\\vrcopters\\Assets\\Simple UI 1\\Fonts\\OFL.txt",
+              "RelativeDocumentMoniker": "Assets\\Simple UI 1\\Fonts\\OFL.txt",
+              "ToolTip": "D:\\CosmicOdyssey\\vrcopters\\vrcopters\\Assets\\Simple UI 1\\Fonts\\OFL.txt",
+              "RelativeToolTip": "Assets\\Simple UI 1\\Fonts\\OFL.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-02T10:08:07.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
